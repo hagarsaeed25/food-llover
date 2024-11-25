@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{ 
+    font-family:"Quicksand", sans-serif;
+}
+
+
+/* utility classes */
+.primary_text {
+    color: #e4b95b;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+/*___________________________________________ header _start _______________________________________________________*/
+.navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+.btn_primary {
+    color: white;
+    border: 1px solid white;
+}
+.btn_primary:hover{
+    background-color: #e4b95b;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 100vh;
+    background:url(img/home_bg.jpeg) center center/cover no-repeat;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar ul {
+    display: flex;
+    margin-right: 100px;
+}
+.navbar ul li a {
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid  #e4b95b;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+header .content h1{
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: white;
+}
+
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header *{
+    z-index: 10;
+}
+ /*____________________________________________________ About_start___________________________________________ */
+
+    .container{margin: auto;
+        max-width: 1100px;
+    }
+
+.About{
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+.About .title{ 
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.About h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #383848;
+}
+
+.About .title p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #9a9a9a;
+}
+
+
+.About .about_contant {
+    display: flex;
+    justify-content: space-between;
+}
+
+.About .about_contant img{
+    width: 450px;
+}
+
+.About .about_contant p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.btn_sacondry{
+    color: white;
+    background: #383848;
+    margin-top: 2rem;
+}
+
+.btn_sacondry:hover{background-color: #e4b95b;}
+
+/* offers */
+.offers{
+height: 80vh;
+display: flex;
+justify-content: center;
+background: url(img/offer-background.jpg) center center/cover fixed;
+flex-direction: column;
+} 
+.offers .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.offers h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e4b95b;
+}
+
+.offers .title p{
+    color: #fff;
+    font-weight: 500;
+}
+
+.offers .ofers_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.offers .ofers_items img {
+    width: 200px;
+}
+
+
+.offers .ofers_items h3{
+    color: #fff;
+    font-size: 25px;
+    margin: 15px 0;
+
+}
+.offers .ofers_items p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #fff;
+    width: 450px;
+}
+
+.offers .ofers_items span{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
